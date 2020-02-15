@@ -1,12 +1,15 @@
-import React from 'react';
+import React from "react";
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import {Container, Header} from 'semantic-ui-react';
+import 'semantic-ui-css/semantic.min.css';
+import MainForm from "./components/MainForm";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const App = () => (
+  <Container style={{marginTop: '3rem', padding: '0 5px'}}>
+    <Header>
+      <MainForm/>
+    </Header>
+  </Container>
+);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(<App/>, document.querySelector('#root'));

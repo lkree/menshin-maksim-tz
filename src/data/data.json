@@ -1,0 +1,206 @@
+[
+  {
+    "label": "СНИЛС или номер регистрации ЦСМ",
+    "type": "text",
+    "required": false,
+    "validate": {
+      "length": {
+        "min": 1,
+        "max": 32
+      },
+      "onlyNumbers": true
+    },
+    "computer": 5,
+    "mobile": 16,
+    "solo": true
+  },
+  {
+    "label": "Фамилия",
+    "type": "text",
+    "required": true,
+    "validate": {
+      "length": {
+        "min": 1,
+        "max": 32
+      },
+      "onlyNumbers": false
+    },
+    "computer": 5,
+    "mobile": 16
+  },
+  {
+    "label": "Имя",
+    "type": "text",
+    "required": true,
+    "validate": {
+      "length": {
+        "min": 1,
+        "max": 32
+      },
+      "onlyNumbers": false
+    },
+    "computer": 5,
+    "mobile": 16
+  },
+  {
+    "label": "Отчество (обязательно при наличии)",
+    "type": "text",
+    "required": false,
+    "validate": {
+      "length": {
+        "min": 1,
+        "max": 32
+      },
+      "onlyNumbers": false
+    },
+    "computer": 5,
+    "mobile": 16
+  },
+  {
+    "label": "Пол",
+    "type": "select",
+    "required": true,
+    "options": [
+      {
+        "key": "М",
+        "value": "male",
+        "text": "М"
+      },
+      {
+        "key": "Ж",
+        "value": "female",
+        "text": "Ж"
+      }
+    ],
+    "placeholder": "Не выбрано",
+    "computer": 5,
+    "mobile": 16
+  },
+  {
+    "label": "Дата рождения",
+    "type": "date",
+    "required": true,
+    "computer": 5,
+    "mobile": 16
+  },
+  {
+    "label": "Гражданство",
+    "type": "select",
+    "required": true,
+    "options": [
+      {
+        "key": "Россия",
+        "value": "Russia",
+        "text": "Россия"
+      },
+      {
+        "key": "Украина",
+        "value": "Ukraine",
+        "text": "Украина"
+      },
+      {
+        "key": "Белоруссия",
+        "value": "Belarus",
+        "text": "Белоруссия"
+      },
+      {
+        "key": "Молдавия",
+        "value": "Moldova",
+        "text": "Молдавия"
+      }
+    ],
+    "placeholder": "Не выбрано",
+    "computer": 5,
+    "mobile": 16
+  },
+  {
+    "label": "Тип документа",
+    "type": "select",
+    "required": true,
+    "options": [
+      {
+        "key": "Паспорт РФ",
+        "value": "passport",
+        "text": "Паспорт РФ"
+      },
+      {
+        "key": "Водительское удостоверение",
+        "value": "drivers licence",
+        "text": "Водительское удостоверение"
+      }
+    ],
+    "placeholder": "Не выбрано",
+    "computer": 5,
+    "mobile": 16
+  },
+  {
+    "label": "Номер документа",
+    "type": "text",
+    "required": true,
+    "validate": {
+      "length": {
+        "min": 10,
+        "max": 16
+      },
+      "onlyNumbers": true
+    },
+    "computer": 5,
+    "mobile": 16
+  },
+  {
+    "label": "Тариф",
+    "type": "select",
+    "required": true,
+    "options": [
+      {
+        "key": "Детский",
+        "value": "children",
+        "text": "Детский"
+      },
+      {
+        "key": "Взрослый",
+        "value": "adult",
+        "text": "Взрослый"
+      }
+    ],
+    "placeholder": "Не выбрано",
+    "computer": 5,
+    "mobile": 16
+  },
+  {
+    "label": "Согласен на получение оповещений в случаях чрезвычайных ситуаций на железнодорожном транспорте",
+    "type": "checkbox",
+    "computer": 5,
+    "mobile": 16,
+    "required": true
+  },
+  {
+    "label": "Телефон пассажира",
+    "type": "text",
+    "required": false,
+    "validate": {
+      "pattern": "/\\W/gi",
+      "length": {
+        "min": 6,
+        "max": 22
+      },
+      "onlyNumbers": true
+    },
+    "computer": 5,
+    "mobile": 16
+  },
+  {
+    "label": "E-mail пассажира",
+    "type": "text",
+    "required": false,
+    "validate": {
+      "length": {
+        "min": 4,
+        "max": 32
+      },
+      "onlyNumbers": false
+    },
+    "computer": 5,
+    "mobile": 16
+  }
+]
